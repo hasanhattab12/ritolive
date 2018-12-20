@@ -3,7 +3,7 @@ const client = new Discord.Client();
 var prefix = "c";
 var adminprefix = '-'
 
-const developers = ["472413769700474901"]
+const developers = ["515227572385218570"]
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!developers.includes(message.author.id)) return;
@@ -15,15 +15,15 @@ client.on('message', message => {
      if (message.content === (adminprefix + "leave")) {
     message.guild.leave();        
   } else  
-  if (message.content.startsWith(adminprefix + 'tw')) {
+  if (message.content.startsWith(adminprefix + 'ab')) {
   client.user.setActivity(argresult, {type:'WATCHING'});
       message.channel.send(`**✅   ${argresult}**`)
   } else 
-  if (message.content.startsWith(adminprefix + 'le')) {
+  if (message.content.startsWith(adminprefix + 'ad')) {
   client.user.setActivity(argresult , {type:'LISTENING'});
       message.channel.send(`**✅   ${argresult}**`)
   } else 
-  if (message.content.startsWith(adminprefix + 'ss')) {
+  if (message.content.startsWith(adminprefix + 'as')) {
     client.user.setGame(argresult, "https://www.twitch.tv/dream");
       message.channel.send(`**✅**`)
   }
